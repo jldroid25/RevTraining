@@ -1,0 +1,29 @@
+
+public class ControlFlow {
+	
+	//Define a method to figure out Even or Odd number
+	public static void findOddEvenNumbers(int num) {
+		int result = num % 2;
+		if( result == 0 ) {
+			System.out.println(num + " is an Even Number");
+		} else {
+			System.out.println(num + " is an Odd Number");
+		}
+	}
+	
+	//Working if If else & Else if Block code
+	public static void turnOnTurnOff() {
+	boolean a = true;
+	boolean b = false;
+	
+	if(a) {
+		System.out.println(" ");
+	}
+	}
+
+	public static void main(String[] args) {
+		// invoking/calling findOddEvenNumbers Method
+		int someNumber = 120;
+		findOddEvenNumbers(someNumber);
+	}
+}

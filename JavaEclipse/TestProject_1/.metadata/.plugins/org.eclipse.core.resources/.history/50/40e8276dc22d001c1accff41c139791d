@@ -1,0 +1,18 @@
+
+public class ControlFlow {
+	
+	public static void findOddEvenNumbers(int num) {
+		int result;
+		if( result == num % 2 ) {
+			
+		}
+	}
+
+	
+	public static void main(String[] args) {
+		
+		// Working with If statement 
+
+	}
+
+}

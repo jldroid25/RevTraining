@@ -1,0 +1,11 @@
+
+public class FirstDemo {
+
+	public static void main(String[] args) {
+		
+		//Here is a comment in Java
+		System.out.println("Hello World from Eclipse IDE !");
+
+	}//main
+
+}//class
