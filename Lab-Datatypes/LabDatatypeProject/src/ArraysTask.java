@@ -69,7 +69,7 @@ public class ArraysTask {
             System.out.println("------------\n");
         }
     }
-    //Program to add Two Matrices together
+    //Program to multiply Two Matrices together
     public static void multiplyingMatrices(int[][] array1, int[][]array2) {
 
         // 4-Rows 4-Collumn Array to store the sum of the added matrices
