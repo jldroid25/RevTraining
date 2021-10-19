@@ -7,7 +7,7 @@ public class Cat  extends Animal {
 	public int head;
 	
 	//Constractuctor 
-	private Cat(long fur, int eyes, int mouth, int feet, int head , int tail) {
+	private Cat(int fur, int eyes, int mouth, int feet, int head , int tail) {
 		super(eyes, mouth, feet);
 		//this.fur = fur;
 		this.eyes = eyes;
@@ -21,7 +21,6 @@ public class Cat  extends Animal {
 
 		//Class Animal Sound Method
 		public void makeNoise(String animalSound) {
-			
 			System.out.println( " animalSound From CAT Class") ;
 		}
 		
@@ -30,13 +29,17 @@ public class Cat  extends Animal {
 		
 		Animal animal1 = new Cat(1000, 2, 1, 4, 1, 1);
 	
-		//System.out.println(animal1.fur);// can't access fur from CAt class
-		//System.out.println(animal1.eyes);// can't access  eyes from Cat.
+		//System.out.println(animal1.fur); // can't access fur from CAt class
+		//System.out.println(animal1.eyes); // can't access  eyes from Cat class.
 
-		System.out.println(animal1.feet);// can access feet from Animal
-		System.out.println(animal1.head);// can't access fur
+		System.out.println(" Number of Feet for Cat: ");
+		System.out.println(animal1.feet); // can access feet from Animal
 		
-		animal1.makeNoise("MEOW "); //can access methods on Anilca
+		System.out.println("Number of Head  Cat  :");
+		System.out.println(animal1.head); // can't access fur
+		
+		//Overriden method but will print from Cat Class
+		animal1.makeNoise("MEOW "); //can access methods on Animal 
 		
 		//animal1.bigCatSound(); // Cannot access 
 

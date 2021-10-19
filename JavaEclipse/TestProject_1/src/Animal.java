@@ -26,8 +26,7 @@ public class Animal {
 
 	//Class Animal Sound Method
 	public void makeNoise(String animalSound) {
-		
-		System.out.println( " animalSound") ;
+		System.out.println( " animal Sound: ") ;
 	}
 	
 	
