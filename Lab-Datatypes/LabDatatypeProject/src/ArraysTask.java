@@ -22,7 +22,7 @@ public class ArraysTask {
      *  This kind of 1-D array the last dimension's size is unknown.
      *  so Memory for this one-D array is alloacted with/of different size
      *  When declaring irregular-Array at least one  dimension will not contain
-     *  a specfic value.
+     *  a specific value.
      */
     // Irregular Arrays Program
     public static void myIrregularArray() {
@@ -89,47 +89,46 @@ public class ArraysTask {
 
         // ------- Average Or Mean Grade Program --------
         //To get user's input
-       Scanner scanner = new Scanner (System.in);
-       System.out.println("Enter Total Array Elements");
-       //To Store desired Array size from user
-       int sizeOfArray = scanner.nextInt();
-       if ( sizeOfArray >= 1) {
-        // Get the Grades or Array elements , loop , & store in grades array
-        System.out.println("Please enter desired grades for the array");
-       } 
-       // Checking for Zero or Negative number inputs
-       else if (sizeOfArray  < 0 || sizeOfArray == 0) {
-        System.out.println("Negative Numbers or Zero not allowed - last chance ");
-        sizeOfArray  = scanner.nextInt();
-        scanner.close();
-        System.out.println("Two Strikes You out -  Peace !");
-        return;
-       } 
-        //Store User desired size  into a grade array
-        int[] gradesArray= new int[sizeOfArray];
-       
-       for(int i =0; i < sizeOfArray; i++){
-           gradesArray[i] = scanner.nextInt();
-       }
-       System.out.println("AVerage Grages in Array =  " + averageGrades(gradesArray, sizeOfArray));
-       scanner.close();
+    //    Scanner scanner = new Scanner (System.in);
+    //    System.out.println("Enter Total Array Elements");
+    //    //To Store desired Array size from user
+    //    int sizeOfArray = scanner.nextInt();
+    //    if ( sizeOfArray >= 1) {
+    //     // Get the Grades or Array elements , loop , & store in grades array
+    //     System.out.println("Please enter desired grades for the array");
+    //    } 
+    //    // Checking for Zero or Negative number inputs
+    //    else if (sizeOfArray  < 0 || sizeOfArray == 0) {
+    //     System.out.println("Negative Numbers or Zero not allowed - last chance ");
+    //     sizeOfArray  = scanner.nextInt();
+    //     scanner.close();
+    //     System.out.println("Two Strikes You out -  Peace !");
+    //     return;
+    //    } 
+    //     //Store User desired size  into a grade array
+    //     int[] gradesArray= new int[sizeOfArray];
+    //    for(int i =0; i < sizeOfArray; i++){
+    //        gradesArray[i] = scanner.nextInt();
+    //    }
+    //    //System.out.println("AVerage Grages in Array =  " + averageGrades(gradesArray, sizeOfArray));
+    //    scanner.close();
 
        System.out.println("-----------------------\n");
 
        //Calling irregular array Method
-       myIrregularArray(); 
+       //myIrregularArray();
 
         //Calling irregular  Variable Arguments MEthod
        variableArgumentsMethod("VTSAX", "VOO", "VTI", "VNQ","VXUS", "VCoin", "VJones", "VTRRKX", "VS&P 500", "VTherium");
 
-       int matrix1[][] = {{15,5,25}, {2,1,2}, {8,9,6}};
-       int matrix2[][] = {{35,1,6}, {3,11,3}, {12,21,121}};
-
+       //int matrix1[][] = {{15,5,25}, {2,1,2}, {8,9,6}};
+       //int matrix2[][] = {{35,1,6}, {3,11,3}, {12,21,121}};
        //Calling the Adding Matrices Method(
-       addingMatricesMethod(matrix1, matrix2);
+       //addingMatricesMethod(matrix1, matrix2);
 
         //Calling the Multiplying Matrices Method(
-       multiplyingMatrices(matrix1,  matrix2);
+       //multiplyingMatrices(matrix1,  matrix2);
+      
 
     }//main  
 }//calss 

@@ -9,7 +9,7 @@ public class firstJavaClass {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		message("Hello Coder World !", 12) 
+		message("Hello Coder World !", 12) ;
 		
 
 	}//main
