@@ -11,7 +11,7 @@ public class treesetAnswers  extends tresetInterfaceExample{
         int planeId = answersForTreeSet.setPlaneId();
         int flightNumber =  answersForTreeSet.setFlightNumber();
         
-        //create HashSet Interface object 
+        //create TreeSet Interface object 
         Set<String> myNewTreeset = new TreeSet<>();
 
         //------------ C.R.U.D Operations on a Collection Interface API --------//
