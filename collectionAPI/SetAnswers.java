@@ -2,7 +2,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 //--------- A class to Print  SET Data Collection 
-public class SetAnswers extends basicParentClassData {
+public class SetAnswers extends BasicParentClassData {
     //constructor
     public SetAnswers(String title, int id, int ISBN, String publisher) {
         super(title, id, ISBN, publisher);

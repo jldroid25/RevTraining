@@ -1,7 +1,7 @@
 import java.util.Set;
 import java.util.TreeSet;
 
-public class TreesetAnswers  extends basicParentClassData{
+public class TreesetAnswers  extends BasicParentClassData{
 
     //constructor
     public TreesetAnswers(String title, int id, int ISBN, String publisher) {

@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class HashsetAnswers  extends basicParentClassData {
+public class HashsetAnswers  extends BasicParentClassData {
 
     // constructor
     public HashsetAnswers(String title, int id, int ISBN, String publisher) {

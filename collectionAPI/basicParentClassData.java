@@ -1,11 +1,11 @@
-public class basicParentClassData {
+public class BasicParentClassData {
     protected  String title;
     protected  int id;
     protected  long ISBN;
     protected  String publisher;
     
     //Constructor
-    public basicParentClassData(String title, int id, int ISBN, String publisher){
+    public BasicParentClassData(String title, int id, int ISBN, String publisher){
         super();
         this.title = title;
         this.id = id;

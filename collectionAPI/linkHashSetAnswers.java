@@ -1,7 +1,7 @@
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class LinkHashSetAnswers  extends basicParentClassData{
+public class LinkHashSetAnswers  extends BasicParentClassData{
 
      //constructor
      public LinkHashSetAnswers (String title, int id, int ISBN, String publisher) {
