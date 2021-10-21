@@ -1,15 +1,20 @@
 import java.util.Set;
 import java.util.TreeSet;
 
-public class treesetAnswers  extends tresetInterfaceExample{
+public class TreesetAnswers  extends basicParentClassData{
+
+    //constructor
+    public TreesetAnswers(String title, int id, int ISBN, String publisher) {
+        super(title, id, ISBN, publisher);
+    }
     public static void main(String[] args) {
-        treesetAnswers answersForTreeSet = new treesetAnswers();
+        TreesetAnswers answersForTreeSet = new TreesetAnswers("Boston In Winter ", 123, 234667, "Pengiun House");
 
         //Accessing the data from Parent setter Methods
-        String planeTitle = answersForTreeSet.setPlaneTitle();
-        String destination = answersForTreeSet.setDestination();
-        int planeId = answersForTreeSet.setPlaneId();
-        int flightNumber =  answersForTreeSet.setFlightNumber();
+        String bookTitle = answersForTreeSet.getTitle();
+        String bookPublisher = answersForTreeSet.getPublisher();
+        int bookId = answersForTreeSet.getId();
+        long bookISBN =  answersForTreeSet.getId();
         
         //create TreeSet Interface object 
         Set<String> myNewTreeset = new TreeSet<>();
@@ -17,10 +22,10 @@ public class treesetAnswers  extends tresetInterfaceExample{
         //------------ C.R.U.D Operations on a Collection Interface API --------//
         
         // Create or add data to the set
-        myNewTreeset.add(planeTitle);
-        myNewTreeset.add(destination);
-        myNewTreeset.add("Plane Id :" + planeId);
-        myNewTreeset.add("Flight Number: " + flightNumber);
+        myNewTreeset.add(bookTitle);
+        myNewTreeset.add(bookPublisher);
+        myNewTreeset.add("Plane Id :" + bookId);
+        myNewTreeset.add("Flight Number: " + bookISBN);
 
         System.out.println("\n");
 
@@ -28,14 +33,14 @@ public class treesetAnswers  extends tresetInterfaceExample{
         System.out.println(myNewTreeset + "\n");
 
         //Does Hash set contain flight Numer 601
-        System.out.println("\n Does Treeset contain a Destination?:  \t"
-         + myNewTreeset.contains(destination));
+        System.out.println("\n Does Treeset contain a Publisher?:  \t"
+         + myNewTreeset.contains(bookPublisher));
        
         //Remove an item from Hashset
-        myNewTreeset.remove(destination);
+        myNewTreeset.remove(bookPublisher);
 
         //Printing the Updated SET Elements after one was remove
-        System.out.println("\n ------- Here Destination Was Removed------");
+        System.out.println("\n ------- Here Publisher Was Removed------");
         System.out.println(myNewTreeset);
         System.out.println("\n");
     }       

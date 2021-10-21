@@ -1,10 +1,10 @@
-public class OOPConceptExample {
-//	//This is the parent class 
-	public int someNumber;
+// public class OOPConceptExample {
+// //	//This is the parent class 
+// 	public int someNumber;
 	
 
 
-} //class 
+// } //class 
 
 
 //

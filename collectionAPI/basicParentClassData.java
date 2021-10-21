@@ -1,10 +1,11 @@
-public class setInterfaceExample {
+public class basicParentClassData {
     protected  String title;
     protected  int id;
     protected  long ISBN;
     protected  String publisher;
+    
     //Constructor
-    public setInterfaceExample(String title, int id, int ISBN, String publisher){
+    public basicParentClassData(String title, int id, int ISBN, String publisher){
         super();
         this.title = title;
         this.id = id;
@@ -24,17 +25,17 @@ public class setInterfaceExample {
     public long getISBN(){
         return ISBN;
     }
-     // Setters
-     public String setTitle(){
-        return "Boston in Winter";
+     // Setters //Don't return anything , pass an argument
+     public void setTitle(String title){
+         this.title = title;
     }
-    public String setPublisher(){
-        return "Penguin Globe House";
+    public void setPublisher(String publisher){
+        this.publisher = publisher;
     }
-    public int setId(){
-        return 123;
+    public void setId(int id){
+        this.id = id;
     }
-    public long setISBN(){
-        return 8765123;
+    public void setISBN(long ISBN){
+        this.ISBN = ISBN;
     }
 }

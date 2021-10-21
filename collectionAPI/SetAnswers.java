@@ -2,24 +2,24 @@ import java.util.HashSet;
 import java.util.Set;
 
 //--------- A class to Print  SET Data Collection 
-public class answerForSet extends setInterfaceExample {
+public class SetAnswers extends basicParentClassData {
     //constructor
-    public answerForSet(String title, int id, int ISBN, String publisher) {
+    public SetAnswers(String title, int id, int ISBN, String publisher) {
         super(title, id, ISBN, publisher);
     }
     public static void main(String[] args) {
         System.out.println("\n");
 
         //Create an Object
-        answerForSet  data = new answerForSet(" ", 1, 000000, " ");
+        SetAnswers  data = new SetAnswers("Boston In Winter ", 123, 234667, "Pengiun House");
 
         //Accessing the data from Parent setter Methods
-        String answerTitle = data.setTitle();
-        String answerPublisher = data.setPublisher();
-        int bookId = data.setId();
-        Long bookISBN =  data.setISBN();
+        String answerTitle = data.getTitle();
+        String answerPublisher = data.getPublisher();
+        int bookId = data.getId();
+        Long bookISBN =  data.getISBN();
 
-        // Casting Int & long primitives to String 
+        //Testing for--> Casting Int & long primitives to String 
         String answerBookId = String.valueOf(bookId); 
         String answerBookISBN = String.valueOf(bookISBN);
 
@@ -28,8 +28,8 @@ public class answerForSet extends setInterfaceExample {
         
         //------------ C.R.U.D Operations on a Collection Interface API --------//
         // Create or add data to the set
+        // Will not print duplicate 
         myNewSet.add(answerTitle);
-       // myNewSet.add(answerTitle); //No duplicate & will not be added to SET
         myNewSet.add(answerPublisher);
         myNewSet.add("\n Book ID: " + answerBookId);
         myNewSet.add("\nBook ISBN Number: " + answerBookISBN);
@@ -38,12 +38,17 @@ public class answerForSet extends setInterfaceExample {
         System.out.println(myNewSet);
                 
         //Deleting  Data from the SET 
-        //Read the data after Deleting Title
         myNewSet.remove(answerTitle);
-        
+
+        //(whatever string added must be the exact same one removed .
+        // else Hashcode underneath will be different & not revove
+        //myNewSet.remove("Title will not be remove: " + answerTitle); //not same string
+
+        //Read the data after Deleting Title
         //Printing the Updated SET Elements after one was remove
         System.out.println("\n------- Book Title Remove------");
         System.out.println(myNewSet);
+        
         System.out.println("\n");
     }    
 }
