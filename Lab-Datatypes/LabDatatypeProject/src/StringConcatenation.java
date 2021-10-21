@@ -46,15 +46,9 @@ public class StringConcatenation {
         If, however, the operand is a number (short, int, double, etc.), 
         then the two will produce a mathematical sum.
 
-
-        
         */
 
-
-
-
         System.out.println("\n\n");
-
 
     }
 }
