@@ -16,8 +16,12 @@ public class answerForSet extends setInterfaceExample {
         //Accessing the data from Parent setter Methods
         String answerTitle = data.setTitle();
         String answerPublisher = data.setPublisher();
-        int answerBookId = data.setId();
-        Long answerBookISBN =  data.setISBN();
+        int bookId = data.setId();
+        Long bookISBN =  data.setISBN();
+
+        // Casting Int & long primitives to String 
+        String answerBookId = String.valueOf(bookId); 
+        String answerBookISBN = String.valueOf(bookISBN);
 
         //create Set Interface object 
         Set<String> myNewSet = new HashSet<>();
@@ -38,7 +42,7 @@ public class answerForSet extends setInterfaceExample {
         myNewSet.remove(answerTitle);
         
         //Printing the Updated SET Elements after one was remove
-        System.out.println("------- Book Title Remove------");
+        System.out.println("\n------- Book Title Remove------");
         System.out.println(myNewSet);
         System.out.println("\n");
     }    
