@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.Set;
 
 public class hashsetAnswers  extends hashsetInterfaceExample{
 
@@ -12,7 +13,10 @@ public class hashsetAnswers  extends hashsetInterfaceExample{
         int flightNumber =  answersForHashSet.setFlightNumber();
         
         //create HashSet Interface object 
-        HashSet<String> myNewHashset = new HashSet<>();
+        //HashSet<String> myNewHashset = new HashSet<>();
+        //HashSet implements SET 
+        Set<String> myNewHashset = new HashSet<>();
+
 
         //------------ C.R.U.D Operations on a Collection Interface API --------//
         
