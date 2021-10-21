@@ -1,4 +1,5 @@
 import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class linkHashSetAnswers  extends linkHashSetInterfaceExample{
 
@@ -12,7 +13,11 @@ public class linkHashSetAnswers  extends linkHashSetInterfaceExample{
         int flightNumber =  answersForLinkHashSet.setFlightNumber();
         
         //create HashSet Interface object 
-        LinkedHashSet<String> myNewLinkedSet = new LinkedHashSet<>();
+        //LinkedHashSet<String> myNewLinkedSet = new LinkedHashSet<>();
+        
+        //We can also use SET since LinkedHashSet implements it as well
+        Set<String> myNewLinkedSet = new LinkedHashSet<>();
+
 
         //------------ C.R.U.D Operations on a Collection Interface API --------//
         
