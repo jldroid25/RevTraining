@@ -3,5 +3,6 @@
         "collectionAPI",
         "JavaEclipse/TestProject_1/src",
         "JavaEclipse"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }

@@ -1,5 +1,4 @@
 import java.util.ArrayDeque;
-import java.util.Stack;
 
 public class StackAnswers extends BasicParentClassData {
     //constructor
